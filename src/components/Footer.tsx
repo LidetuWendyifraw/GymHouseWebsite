@@ -100,7 +100,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-dark-800 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-dark-500">© 2026 Gym House. All rights reserved.</p>
+          <p className="text-sm text-dark-500">© 2026 Lidetu Wedyifraw via LW-tech. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="text-sm text-dark-500 hover:text-primary-400 transition-colors">Privacy Policy</a>
             <a href="#" className="text-sm text-dark-500 hover:text-primary-400 transition-colors">Terms of Service</a>
