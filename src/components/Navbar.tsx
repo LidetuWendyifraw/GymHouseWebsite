@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Dumbbell, Menu, X, User, LogOut, LayoutDashboard, Bell } from 'lucide-react';
+import { Menu, X, LogOut, LayoutDashboard, Bell } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useRouter } from '../context/RouterContext';
-import { supabase } from '../lib/supabase';
+import { Bolt Database } from '../lib/supabase';
 import { Notification } from '../types';
 
 export default function Navbar() {
@@ -22,7 +22,7 @@ export default function Navbar() {
 
   useEffect(() => {
     if (user) {
-      supabase
+      Bolt Database
         .from('notifications')
         .select('*')
         .eq('user_id', user.id)
@@ -62,11 +62,13 @@ export default function Navbar() {
       <nav className="container-max px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <button onClick={() => navigate('/')} className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-lg bg-primary-600 flex items-center justify-center group-hover:scale-110 transition-transform">
-             <img src="logo.jpg" alt="the gym-logo" />
-            </div>
+            <img
+              src="/images/logo.jpg"
+              alt="Power Plus Gym logo"
+              className="w-10 h-10 rounded-full object-cover group-hover:scale-110 transition-transform"
+            />
             <span className="font-display text-xl font-bold text-white tracking-wider">
-              POWER PLUS &nbsp;<span className="text-primary-500">GYM</span>
+              POWER<span className="text-primary-500"> PLUS GYM</span>
             </span>
           </button>
 
@@ -233,3 +235,4 @@ export default function Navbar() {
     </header>
   );
 }
+
