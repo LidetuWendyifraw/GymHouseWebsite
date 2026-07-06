@@ -66,7 +66,7 @@ export default function Navbar() {
               <Dumbbell className="w-6 h-6 text-white" />
             </div>
             <span className="font-display text-xl font-bold text-white tracking-wider">
-              GYM<span className="text-primary-500">HOUSE</span>
+              POWER PLUS<span className="text-primary-500">GYM</span>
             </span>
           </button>
 
