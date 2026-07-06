@@ -1,4 +1,4 @@
-import { Dumbbell, Facebook, Instagram, Twitter, Youtube, MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Youtube, MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { useRouter } from '../context/RouterContext';
 
 export default function Footer() {
@@ -19,11 +19,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-primary-600 flex items-center justify-center">
-                <Dumbbell className="w-6 h-6 text-white" />
-              </div>
+              <img
+                src="/images/logo.jpg"
+                alt="Power Plus Gym logo"
+                className="w-10 h-10 rounded-full object-cover"
+              />
               <span className="font-display text-xl font-bold text-white tracking-wider">
-                GYM<span className="text-primary-500">HOUSE</span>
+                POWER<span className="text-primary-500"> PLUS GYM</span>
               </span>
             </div>
             <p className="text-sm text-dark-400 leading-relaxed mb-4">
@@ -100,7 +102,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-dark-800 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-dark-500">© 2026 Lidetu Wedyifraw via LW-tech. All rights reserved.</p>
+          <p className="text-sm text-dark-500">© 2026 Power Plus Gym. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="text-sm text-dark-500 hover:text-primary-400 transition-colors">Privacy Policy</a>
             <a href="#" className="text-sm text-dark-500 hover:text-primary-400 transition-colors">Terms of Service</a>
@@ -110,3 +112,4 @@ export default function Footer() {
     </footer>
   );
 }
+
