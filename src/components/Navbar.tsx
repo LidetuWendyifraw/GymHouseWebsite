@@ -66,7 +66,7 @@ export default function Navbar() {
              <img src="logo.jpg" alt="the gym-logo" />
             </div>
             <span className="font-display text-xl font-bold text-white tracking-wider">
-              POWER PLUS<span className="text-primary-500">GYM</span>
+              POWER PLUS &nbsp;<span className="text-primary-500">GYM</span>
             </span>
           </button>
 
